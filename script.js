@@ -11,8 +11,8 @@ const detailContainer = document.getElementById('detail-container');
 
 // Display details click handler
 for (const detailsBtn of allDetailsBtn) {
-    detailsBtn.addEventListener('click', () => {
-        const dataId = detailsBtn.getAttribute('data-id');
+    detailsBtn.addEventListener('click', (event) => {
+        const dataId = event.target.getAttribute('data-id');
         const matchedProduct = products.find(product => product.id === parseInt(dataId));
         displayDetails(matchedProduct);
     })
