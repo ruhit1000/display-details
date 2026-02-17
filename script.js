@@ -5,10 +5,11 @@ const products = [
     { id: 103, name: "Bata Sandal", price: 800, desc: "Comfortable daily wear for home." }
 ];
 
-// 
+// Selection of DOM Elements
 const allDetailsBtn = document.getElementsByClassName('view-btn');
 const detailContainer = document.getElementById('detail-container');
 
+// Display details click handler
 for (const detailsBtn of allDetailsBtn) {
     detailsBtn.addEventListener('click', () => {
         const dataId = detailsBtn.getAttribute('data-id');
@@ -17,6 +18,7 @@ for (const detailsBtn of allDetailsBtn) {
     })
 }
 
+// Function to re-render the product details section
 function displayDetails(object) {
     const productName = object.name;
     const productDesc = object.desc;
