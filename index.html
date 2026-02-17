@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main>
+        <section class="max-w-5xl mx-auto flex gap-4 my-10">
+            <div class="card bg-base-100 w-96 shadow-sm border">
+                <figure>
+                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Nike Shoes</h2>
+                    <p>Click below to see why these are the best for running.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary view-btn" data-id="101">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-96 shadow-sm border">
+                <figure>
+                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Adidas Bag</h2>
+                    <p>A durable bag for your daily adventures.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary view-btn" data-id="102">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 w-96 shadow-sm border">
+                <figure>
+                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Bata Sandal</h2>
+                    <p>Simple, comfortable, and long-lasting.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary view-btn" data-id="103">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detail-container"
+            class="max-w-5xl mx-auto p-6 border-2 border-dashed border-blue-400 rounded-xl text-center">
+            <h1 class="text-2xl font-bold text-gray-400">Click a button to see product details here</h1>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
